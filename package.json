@@ -47,8 +47,12 @@
     "typescript": "~4.3.2"
   },
   "browserslist": [
-    "defaults"
+    "defaults",
+    "> 1%",
+    "last 2 versions",
+    "last 2 versions",
+    "not ie <= 10",
+    "not ie_mob <= 10"
   ]
-
-
+  
 }
