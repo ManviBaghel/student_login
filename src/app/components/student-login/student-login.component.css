@@ -1,0 +1,66 @@
+
+   .btn-danger {
+    background-color: rgb(4, 4, 168);
+    color: white;
+    padding: 12px 20px;
+    margin: 5px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 14px;
+  }
+      h3{
+          font-family: Arial, Helvetica, sans-serif;
+          padding: auto;
+          margin: 0%;
+          font-weight: bold;
+          color:maroon;
+      }
+
+      .btn-primary {
+        background-color:rgb(163, 159, 159);
+        color: black;
+        padding: 12px 20px;
+        margin: 5px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        font-size: 19x;
+        font-weight: bold;
+
+    }
+    h5 {
+        margin: 5px 0 5px;
+        text-align: center;
+        width: 100%;
+        border-bottom: 1px solid black; 
+        line-height: 0.1em;
+
+    }
+    h5 span{
+        background-color: #fff;
+        padding: 0 10px;
+    }
+
+    input[type=text], input[type=password] {
+        margin: 5px 0 2px 0 ;
+        display: inline-block;
+        width: 100%;
+        padding: 7px;
+        background-color: #f1f1f1;
+    }
+    
+    label{
+        font-size: 20px;
+    }
+    .redirectToLogin {
+        color: black;
+    }
+
+  
+
+    
+
+
+
+

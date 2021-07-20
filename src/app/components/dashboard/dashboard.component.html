@@ -1,0 +1,22 @@
+ <div class="container mr-5" style="max-width: 100px 100px">
+
+   <div class="row" *ngIf="ngAuthService.userState as user">
+     <div class="media">
+       <h4>Hello Students</h4>
+       <!-- <img class="align-self-start mr-5 img-thumbnail rounded-circle"
+         src= ""{{(user.photoURL) ? user.photoURL : 'user-thumbnail.png"}}" alt="{{user.displayName}}"> -->
+       <div class="media-body">
+         <h2>Hi Student: <strong>{{(user.displayName) ? user.displayName : 'User'}}</strong></h2>
+         <!-- <h2>Hi Student: <strong>{{(user.Name)}}</strong></h2> -->
+
+         <p>User ID: <strong>{{user.uid}}</strong></p>
+         <p>Email: <strong>{{user.email}}</strong></p>
+       </div>
+     </div>
+   </div>
+
+   <a class="btn btn-block btn-primary" (click)="ngAuthService.SignOut()">
+     Sign Out
+   </a>
+
+ </div>
