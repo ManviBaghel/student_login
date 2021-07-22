@@ -20,6 +20,9 @@ import { StudentEmailverifyComponent } from './components/student-emailverify/st
 import { StudentForgotpswdComponent } from './components/student-forgotpswd/student-forgotpswd.component';
 import { NgxUiLoaderModule } from 'ngx-ui-loader'; 
 import { NgxUiLoaderHttpModule } from "ngx-ui-loader";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HomeComponent } from './components/home/home.component';
+
 console.warn("component module")
 @NgModule({
   declarations: [
@@ -32,7 +35,8 @@ console.warn("component module")
     StudentLoginComponent,
     StudentSignupComponent,
     StudentEmailverifyComponent,
-    StudentForgotpswdComponent
+    StudentForgotpswdComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -41,9 +45,8 @@ console.warn("component module")
     AngularFireAuthModule,
     AngularFirestoreModule, 
     NgxUiLoaderModule,
-     NgxUiLoaderHttpModule.forRoot({showForeground: true,
-    }),
- 
+    NgxUiLoaderHttpModule.forRoot({showForeground: true}),
+    BrowserAnimationsModule 
 
   ],
   providers: [NgAuthService],

@@ -3,18 +3,51 @@
     color: white;
     padding: 12px 20px;
     margin: 5px 0;
-    border: none;
+    border: 1px solid black;
     cursor: pointer;
     width: 100%;
     font-size: 14px;
+    position: relative;
+    text-align: center;
+    -webkit-transition-duration: 0.5s; /* Safari */
+  transition-duration: 0.5s;
+  overflow: hidden;
   }
+.btn-danger:hover{
+    border: 2px solid blueviolet;
+    background: rgb(216, 53, 53) border-box;
 
+}
+.btn-danger:after {
+    content: "";
+    background: white;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+  .btn-danger:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
   h3{
     font-family: Arial, Helvetica, sans-serif;
-    padding: auto;
+    /* padding: auto; */
     margin: 1px;
     font-weight: bold;
     color: maroon;
+    font-style: oblique;
+    padding-top:20px;
+    text-align:center;
+    font-size: 30px;
+
 }
 
 .btn-primary {
@@ -22,38 +55,50 @@
     color: black;
     padding: 12px 20px;
     margin: 5px 0;
-    border: none;
+    border: 1px solid black;
     cursor: pointer;
     width: 100%;
     font-weight: bold;
     font-size: 18x;
     font-weight: bold;
 }
+.btn-primary:hover{
+    border: 2px solid blueviolet;
+    background: rgb(250, 14, 14) border-box;
+
+}
+
 h5 {
-    margin: 10px 0 20px;
+    margin: 10px 0 10px;
     text-align: center;
     width: 100%;
     border-bottom: 1px solid black; 
     line-height: 0.1em;
 }
 h5 span{
-    background-color: #fff;
+    background-color: rgb(252, 252, 252);
     padding: 0 10px;
 }
 
 .form-control {
-   text-align: center;
+   text-align: left;
+   padding: 5px 0 5px 0;
+   margin: 0;
+   width: 100%;
+   /* font-size: 15px; */
 }
 .form-group {
-    margin: 5px 5px;
+    margin: 0;
     width: 100%;
+    padding: 2px 0 0 0;
 }
 input[type=text], input[type=email], input[type=password] {
-    margin: 5px 0 2px 0 ;
+    margin: 5px 0 2px 0;
+    /* margin: 0; */
     display: inline-block;
     width: 100%;
-    padding: 7px;
-    background-color: #f1f1f1;
+    padding: 1px;
+    background-color: #f3ecec;
 }
 
 label{
@@ -62,5 +107,30 @@ label{
 
 .redirectToLogin {
     color: black;
+    
 }
+/* .slide-controls .slide{
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 48px;
+    cursor: pointer;
+    z-index: 1;
+    transition: all 0.6s ease;
+  }
+  .slide-controls label.signup{
+    color: #000;
+  }
+  .slide-controls .slider-tab{
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    left: 0;
+    z-index: 0;
+    border-radius: 5px;
+    background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+    transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);} */
 

@@ -1,0 +1,17 @@
+/* h2{
+    text-align: center;
+    text-decoration: rgba(red, green, blue, alpha);
+    font-family: serif;
+    font-size: 30px;
+    margin: 2px ;
+} */
+body{
+
+  background-image: url('background_img.jpg');
+  text-align: center;
+  font-size: 25px;
+  font-family: serif;
+  margin: 0;
+
+
+}
