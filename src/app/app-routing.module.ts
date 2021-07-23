@@ -11,7 +11,7 @@ import { HomeComponent } from './components/home/home.component';
 
 const routes: Routes = [
    { path: '', redirectTo: '/home', pathMatch: 'full' },
-  { path: 'sign-in', component: StudentLoginComponent},
+  { path: 'student_login/sign-in', component: StudentLoginComponent},
   { path: 'sign-up', component: StudentSignupComponent},
   { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard] },
   { path: 'forgot-password', component: StudentForgotpswdComponent },
